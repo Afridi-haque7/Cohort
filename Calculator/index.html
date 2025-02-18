@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>\
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main>
+        <div class="flex flex-col justify-center items-center gap-16">
+            <h1 class="text-2xl font-semibold">My Calculator</h1>
+            <div class="bg-gray-300 flex flex-col gap-4 px-8 py-4 rounded-lg">
+                <!-- Calculator display -->
+                <div id="result-screen" class="bg-white relative min-w-[250px] min-h-[60px] rounded-lg shadow-md">
+                    <p id="result" class="text-2xl font-semibold absolute bottom-0 right-0 content-box mx-1 my-1"></p>
+                </div>
+                <!-- Calculator keys -->
+                <div class="grid grid-cols-4 gap-4">
+                    <div id="clear"
+                        class="col-span-2 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-red-400">AC
+                    </div>
+                    <div id="divide"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">/
+                    </div>
+                    <div id="multiply"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">*
+                    </div>
+
+                    <div id="1"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">1
+                    </div>
+                    <div id="2"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">2
+                    </div>
+                    <div id="3"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">3
+                    </div>
+                    <div id="subtract"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">-
+                    </div>
+
+                    <div id="4"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">4
+                    </div>
+                    <div id="5"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">5
+                    </div>
+                    <div id="6"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">6
+                    </div>
+                    <div id="add"
+                        class="col-span-1 row-span-2 self-auto px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">
+                        +</div>
+
+                    <div id="7"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">7
+                    </div>
+                    <div id="8"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">8
+                    </div>
+                    <div id="9"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">9
+                    </div>
+
+                    <div id="dot"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">.
+                    </div>
+                    <div id="0"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">0
+                    </div>
+                    <div id="back"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-zinc-100">D
+                    </div>
+                    <div id="equal"
+                        class="col-span-1 px-2 box-content rounded-md py-1 text-xl text-center shadow-md bg-blue-400">=
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
