@@ -72,7 +72,6 @@ dot.addEventListener("click", () => {
 // taking input for signs
 add.addEventListener("click", () => {
   str += "+";
-
   result.innerText = str;
 });
 subtract.addEventListener("click", () => {
@@ -101,44 +100,60 @@ back.addEventListener("click", () => {
 });
 equal.addEventListener("click", () => {
   let n = str.length;
-  if (
-    str[0] == "+" ||
-    str[0] == "-" ||
-    str[0] == "" ||
-    str[0] == "/" ||
-    str[n - 1] == "+" ||
-    str[n - 1] == "-" ||
-    str[n - 1] == "" ||
-    str[n - 1] == "/"
-  ) {
+  let signs = ['+', '-', '*', '/'];
+  if (signs.includes(str[0]) || signs.includes(str[n - 1])) {
     str = "Wrong Input";
-  }
-  let sign;
-  let op = "";
-  let output = 0;
-  for (let i = 0; i < n; i++) {
-    if (str[i] == "+" || str[i] == "-" || str[i] == "*" || str[i] == "/") {
-      sign = str[i];
-      let num = parseInt(op);
+  } 
+  else {
+    let sign = ''
+    let op = "";
+    let output = 0;
+    for (let i = 0; i < n; i++) {
+      if (signs.includes(str[i])) {      
+        let num = Number.isInteger(op)
+          ? Number.parseInt(op, 10)
+          : Number.parseFloat(op);
 
-      if (output == 0) {
-        output = num;
+        
+        if (output == 0) {
+          output = num;
+        }
+        else{
+            if (sign === "+") output += num;
+            else if (sign === "-") output -= num;
+            else if (sign === "*") output *= num;
+            else if (sign === "/") output /= num;
+        }
+        sign = str[i]
+        op = "";
+        // str=''
+      } else if (i === n - 1) {
+        op += str[i];
+        let num = Number.isInteger(op)
+          ? Number.parseInt(op, 10)
+          : Number.parseFloat(op);
+
+        console.log(
+          `i = ${i}, num = ${num}, sign = ${sign}, output = ${output}`
+        );
+
+        if (sign === "+") output += num;
+        else if (sign === "-") output -= num;
+        else if (sign === "*") output *= num;
+        else if (sign === "/") output /= num;
+      } else {
+        op += str[i];
       }
-      op = "";
-    } else if (i == n - 1) {
-      op += str[i];
-      let num = parseInt(op);
+    }
 
-      if (sign == "+") output += num;
-      else if (sign == "-") output -= num;
-      else if (sign == "*") output *= num;
-      else if (sign == "/") output /= num;
-    } else {
-      op += str[i];
+    if (Number.isInteger(output)) {
+      str = output.toString();
+    } else{
+        console.log(output.toFixed(2));
+        str = output.toFixed(2).toString();
+
     }
   }
-  if(output)
-  str = output.toString();
   result.innerText = str.toUpperCase();
   str = "";
 });
