@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cohort Mini projects</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body{
+            background-color: #000000;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <a href="/Calculator/index.html">Calculator</a>
+    <main class="flex flex-col mt-16 gap-4 justify-center items-center px-auto py-auto">
+        <div>
+            <h1 class="text-4xl font-bold">Web Dev Cohort</h1>
+        </div>
+        <div class="flex flex-col gap-8">
+            <h1 class="text-xl font-semibold">Javascript Mini Projects:</h1>
+            <div class="w-[350px] h-[200px] flex flex-col rounded-2xl shadow-lg content-box px-4 py-2 bg-zinc-300">
+                <a href="/Calculator/index.html" class="text-lg font-semibold"><span>1.</span> Calculator</a>
+                <a href="/TODO/index.html" class="text-lg font-semibold"><span>2.</span> TODO App</a>
+
+            </div>
+
+        </div>
+    </main>
 </body>
 </html>

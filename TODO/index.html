@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
-</head>
-<body>
-    <main>
-        <h1>TODO APP</h1>
-        <div class="container">
-            <div>
-                <input type="text" 
-                id="todo-input"
-                placeholder="Enter your task" >
-                <button id="add-btn" >Add</button>
-                <button id="delete-btn">Delete All</button>
-            </div>
-            <div>
-                <ul id="todo-list">
-                    
-                </ul>
-            </div>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        background-color: #01031a;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="h-[80vh] flex justify-center items-center">
+      <div class="flex flex-col gap-8 justify-center items-center min-w-[500px] py-8 px-4 bg-violet-700/20 rounded-2xl shadow-lg">
+        <h1 class="text-3xl font-bold">TODO APP</h1>
+        <div class="w-full flex flex-col gap-4">
+          <div class="flex justify-around">
+            <input class="border border-gray-500 p-2 rounded-full" type="text" id="todo-input" placeholder="Enter your task" />
+            <button id="add-btn" class=" px-4 py-2 rounded-lg cursor-pointer bg-blue-700 hover:bg-blue-400">Add</button>
+            <button id="delete-btn" class=" px-4 py-2 rounded-lg cursor-pointer bg-red-700 hover:bg-red-400">Delete All</button>
+          </div>
+          <div>
+            <ul id="todo-list" class="flex flex-col gap-2 px-4">
+                
+            </ul>
+          </div>
         </div>
+      </div>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
