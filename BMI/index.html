@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        background: rgb(11, 4, 62);
+        background: linear-gradient(
+          0deg,
+          rgba(11, 4, 62, 1) 0%,
+          rgba(62, 5, 62, 1) 100%
+        );
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="flex flex-col backdrop-blur-sm gap-4 justify-center items-center p-8 rounded-2xl shadow-xl border border-2 border-gray-500/20"
+    >
+      <div class="flex flex-col gap-4">
+        <h1 class="text-center text-3xl font-bold">BMI Calculator</h1>
+        <p class="text-gray-500 text-center">Calculate your Body Mass Index</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 items-start">
+          <div class="flex justify-between items-center gap-4 w-full">
+            <label for="">Enter Your Weight:</label>
+            <input
+              type="number"
+              min="0"
+              max="500"
+              class="width-[200px] border border-2 border-gray-600 rounded-lg px-2 py-1"
+              placeholder="i.e. 80"
+              id="weight-input"
+            />
+            <select
+              name="unit"
+              id="w-unit"
+              class="border border-2 border-gray-600 rounded-lg px-2 py-1"
+              default="Select"
+            >
+              <option value="kg">Kgs</option>
+              <option value="lb">Lbs</option>
+            </select>
+          </div>
+          <div class="flex w-full justify-between items-center gap-4">
+            <label for="">Enter Your Height: </label>
+            <input
+              type="number"
+              min="0"
+              max="500"
+              class="width-[200px] border border-2  border-gray-600 rounded-lg px-2 py-1"
+              placeholder="i.e. 80"
+              id="height-input"
+            />
+            <select
+              name="unit"
+              class="border border-2 border-gray-600 rounded-lg px-2 py-1"
+              id="h-unit"
+              default="Select"
+            >
+              <option value="inch">Inches</option>
+              <option value="cm">Cms</option>
+            </select>
+          </div>
+          <div class="flex justify-center items-center w-full">
+            <button class="cursor-pointer rounded-lg bg-white/20 hover:bg-white/10 transition delay-150 duration-200 ease-in-out  px-4 py-2">
+              Calculate BMI
+            </button>
+          </div>
+        </div>
+        <div>
+          <p>Your BMI value : <span id="result"></span></p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
