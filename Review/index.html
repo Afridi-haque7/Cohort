@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review App</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            width:100%;
+            height:100%;
+            background: rgb(13,3,43);
+            background: linear-gradient(0deg, rgba(13,3,43,0.9942307692307693) 29%, rgba(19,38,0,1) 100%);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <main class="flex flex-col lg:flex-row justify-between">
+        <div class="flex justify-center items-center mt-12 lg:mt-0 lg:w-[50%] lg:h-[100vh] lg:border-r-2 lg:border-gray-200/10">
+            <div class="bg-blue-100/10 backdrop-blur-xs px-16 py-8 rounded-2xl flex flex-col gap-4">
+                <!-- Name -->
+                <div class="flex flex-col gap-2">
+                    <label for="name" class="">Enter Your Name: </label>
+                    <input type="text" id="name" class="border border-gray-500/10 border-2 rounded-md shadow-lg px-2 py-1" placeholder="i.e. John Doe">
+                </div>
+                <!-- Email -->
+                <div class="flex flex-col gap-2">
+                    <label for="email">Enter Your Email: </label>
+                    <input type="email" id="email" class="border border-gray-500/10 border-2 rounded-md shadow-md px-2 py-1" placeholder="i.e. johndoe@xyz.com">
+                </div>
+                <!-- Review text -->
+                <div class="flex flex-col gap-2">
+                    <label for="">Enter Your Feedback: </label>
+                    <textarea name="" rows="5" id="message" class="border border-gray-500/10 border-2 rounded-md shadow-md px-2 py-1" placeholder="i.e. your feedback message"></textarea>
+                </div>
+                <!-- Star -->
+                <div class="flex flex-col gap-2">
+                    <label for="">How many stars will you give to our service? </label>
+                    <div class="flex justify-between">
+                        <img class="star w-8 h-8 cursor-pointer transition" data-value="1" src="https://img.icons8.com/ios/50/star--v1.png" alt="star--v1"/>
+                        <img class="star w-8 h-8 cursor-pointer transition" data-value="2" src="https://img.icons8.com/ios/50/star--v1.png" alt="star--v1"/>
+                        <img class="star w-8 h-8 cursor-pointer transition" data-value="3" src="https://img.icons8.com/ios/50/star--v1.png" alt="star--v1"/>
+                        <img class="star w-8 h-8 cursor-pointer transition" data-value="4" src="https://img.icons8.com/ios/50/star--v1.png" alt="star--v1"/>
+                        <img class="star w-8 h-8 cursor-pointer transition" data-value="5" src="https://img.icons8.com/ios/50/star--v1.png" alt="star--v1"/2
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                    <button id="submit" class="shadow-lg rounded-md px-4 py-2 font-semibold text-white cursor-pointer bg-blue-700 hover:bg-blue-900 transition-all ease-in-out duration-150 delay-100">Submit Feedback</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="flex justify-center items-start mt-12 lg:mt-0 lg:w-[50%] h-[100vh]">
+            <ul id="resultField" class="flex flex-col items-center px-8 py-4 gap-4">
+                <div class="bg-blue-100/10 backdrop-blur-xs py-4 px-8 text-s rounded-xl shadow-lg">
+                    <h1 class="text-xl font-semibold">John Doe</h1>
+                    <p class="text-gray-500">johndoe@xyz.com</p>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut possimus laborum ipsam animi. Assumenda consequatur, deserunt itaque harum, culpa facilis architecto hic nisi ipsum maiores aut sed iusto, ipsam excepturi.</p>
+                </div>
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+⭐
+ ★
+-->
