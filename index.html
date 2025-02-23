@@ -14,17 +14,51 @@ background: radial-gradient(circle, rgba(6,2,34,0.9942307692307693) 0%, rgba(10,
     </style>
 </head>
 <body>
-    <main class="flex flex-col mt-16 gap-4 justify-center items-center px-auto py-auto">
+    <main class="flex flex-col my-16 gap-4 justify-center items-center px-auto py-auto">
         <div>
-            <h1 class="text-4xl font-bold">Web Dev Cohort</h1>
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-orange-400 via-zinc-200 to-green-500 text-transparent bg-clip-text">Web Dev Cohort</h1>
         </div>
-        <div class="flex flex-col gap-8">
-            <h1 class="text-xl font-semibold">Javascript Mini Projects:</h1>
-            <div class="w-[350px] h-[200px] flex flex-col rounded-2xl shadow-lg content-box px-4 py-2 bg-zinc-300">
-                <a href="/Calculator/index.html" class="text-lg font-semibold"><span>1.</span> Calculator</a>
-                <a href="/TODO/index.html" class="text-lg font-semibold"><span>2.</span> TODO App</a>
-                <a href="/BMI/index.html" class="text-lg font-semibold"><span>3.</span> BMI Calculator</a>
-                <a href="/Review/index.html" class="text-lg font-semibold"><span>4.</span> Review App</a>
+        <div class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="max-w-[250px] border-2 border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
+                    <img class="w-full h-60 rounded-t-xl" src="assets/calculator.png" alt="">
+                    <div class="px-4 py-2 flex flex-col gap-2">
+                        <h1 class="text-xl text-center font-semibold">JS Calculator</h1>
+                        <p class="text-sm text-gray-300">Javascript based Calculator where you can perform mathematical operations</p>
+                        <a href="Calculator/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
+
+                    </div>
+                </div>
+
+                <div class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
+                    <img class="w-full h-60 rounded-t-xl" src="assets/todo.png" alt="">
+                    <div class="px-4 py-2 flex flex-col gap-2">
+                        <h1 class="text-xl text-center font-semibold">TODO App</h1>
+                        <p class="text-sm text-gray-300">Task Management Application where you can add a task, edit it and later delete it.</p>
+                        <a href="TODO/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
+
+                    </div>
+                </div>
+
+                <div class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
+                    <img class="w-full h-60 rounded-t-xl" src="assets/bmi.png" alt="">
+                    <div class="px-4 py-2 flex flex-col gap-2">
+                        <h1 class="text-xl text-center font-semibold">BMI Checker</h1>
+                        <p class="text-sm text-gray-300">A BMI Checker application which will calculate user's BMI based on height and weight.</p>
+                        <a href="BMI/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
+
+                    </div>
+                </div>
+
+                <div class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
+                    <img class="w-full h-50 rounded-t-xl" src="assets/review-2.png" alt="">
+                    <div class="px-4 py-2 flex flex-col gap-2">
+                        <h1 class="text-xl text-center font-semibold">Review Form</h1>
+                        <p class="text-sm text-gray-300">Javascript Review application where user can rate the cohort and gicve their feedback.</p>
+                        <a href="Review/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
+
+                    </div>
+                </div>
 
             </div>
 
