@@ -1,68 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cohort Mini projects</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
-        body{
-            background: rgb(6,2,34);
-background: radial-gradient(circle, rgba(6,2,34,0.9942307692307693) 0%, rgba(10,2,35,1) 0%, rgba(40,0,40,1) 100%);
-            color: #fff;
-        }
+      body {
+        background: rgb(6, 2, 34);
+        background: radial-gradient(
+          circle,
+          rgba(6, 2, 34, 0.9942307692307693) 0%,
+          rgba(10, 2, 35, 1) 0%,
+          rgba(40, 0, 40, 1) 100%
+        );
+        color: #fff;
+      }
     </style>
-</head>
-<body>
-    <main class="flex flex-col my-16 gap-4 justify-center items-center px-auto py-auto">
-        <div>
-            <h1 class="text-4xl font-bold bg-gradient-to-r from-orange-400 via-zinc-200 to-green-500 text-transparent bg-clip-text">Web Dev Cohort</h1>
-        </div>
-        <div class="mt-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div class="max-w-[250px] border-2 border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
-                    <img class="w-full h-60 rounded-t-xl" src="assets/calculator.png" alt="">
-                    <div class="px-4 py-2 flex flex-col gap-2">
-                        <h1 class="text-xl text-center font-semibold">JS Calculator</h1>
-                        <p class="text-sm text-gray-300">Javascript based Calculator where you can perform mathematical operations</p>
-                        <a href="Calculator/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
-
-                    </div>
-                </div>
-
-                <div class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
-                    <img class="w-full h-60 rounded-t-xl" src="assets/todo.png" alt="">
-                    <div class="px-4 py-2 flex flex-col gap-2">
-                        <h1 class="text-xl text-center font-semibold">TODO App</h1>
-                        <p class="text-sm text-gray-300">Task Management Application where you can add a task, edit it and later delete it.</p>
-                        <a href="TODO/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
-
-                    </div>
-                </div>
-
-                <div class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
-                    <img class="w-full h-60 rounded-t-xl" src="assets/bmi.png" alt="">
-                    <div class="px-4 py-2 flex flex-col gap-2">
-                        <h1 class="text-xl text-center font-semibold">BMI Checker</h1>
-                        <p class="text-sm text-gray-300">A BMI Checker application which will calculate user's BMI based on height and weight.</p>
-                        <a href="BMI/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
-
-                    </div>
-                </div>
-
-                <div class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10  rounded-xl flex flex-col gap-4">
-                    <img class="w-full h-50 rounded-t-xl" src="assets/review-2.png" alt="">
-                    <div class="px-4 py-2 flex flex-col gap-2">
-                        <h1 class="text-xl text-center font-semibold">Review Form</h1>
-                        <p class="text-sm text-gray-300">Javascript Review application where user can rate the cohort and gicve their feedback.</p>
-                        <a href="Review/index.html" class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black">Visit</a>
-
-                    </div>
-                </div>
-
+  </head>
+  <body>
+    <main
+      class="flex flex-col my-16 gap-4 justify-center items-center px-auto py-auto"
+    >
+      <div>
+        <h1
+          class="text-4xl font-bold bg-gradient-to-r from-orange-400 via-zinc-200 to-green-500 text-transparent bg-clip-text"
+        >
+          Web Dev Cohort
+        </h1>
+      </div>
+      <div class="mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div
+            class="max-w-[250px] border-2 border-gray-500/10 bg-blue-100/10 rounded-xl flex flex-col gap-4"
+          >
+            <img
+              class="w-full h-60 rounded-t-xl"
+              src="assets/calculator.png"
+              alt=""
+            />
+            <div class="px-4 py-2 flex flex-col gap-2">
+              <h1 class="text-xl text-center font-semibold">JS Calculator</h1>
+              <p class="text-sm text-gray-300">
+                Javascript based Calculator where you can perform mathematical
+                operations
+              </p>
+              <a
+                href="Calculator/index.html"
+                class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black"
+                >Visit</a
+              >
             </div>
+          </div>
 
+          <div
+            class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10 rounded-xl flex flex-col gap-4"
+          >
+            <img
+              class="w-full h-60 rounded-t-xl"
+              src="assets/todo.png"
+              alt=""
+            />
+            <div class="px-4 py-2 flex flex-col gap-2">
+              <h1 class="text-xl text-center font-semibold">TODO App</h1>
+              <p class="text-sm text-gray-300">
+                Task Management Application where you can add a task, edit it
+                and later delete it.
+              </p>
+              <a
+                href="TODO/index.html"
+                class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black"
+                >Visit</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10 rounded-xl flex flex-col gap-4"
+          >
+            <img class="w-full h-60 rounded-t-xl" src="assets/bmi.png" alt="" />
+            <div class="px-4 py-2 flex flex-col gap-2">
+              <h1 class="text-xl text-center font-semibold">BMI Checker</h1>
+              <p class="text-sm text-gray-300">
+                A BMI Checker application which will calculate user's BMI based
+                on height and weight.
+              </p>
+              <a
+                href="BMI/index.html"
+                class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black"
+                >Visit</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="border-2 max-w-[250px] border-gray-500/10 bg-blue-100/10 rounded-xl flex flex-col gap-4"
+          >
+            <img
+              class="w-full h-50 rounded-t-xl"
+              src="assets/review-2.png"
+              alt=""
+            />
+            <div class="px-4 py-2 flex flex-col gap-2">
+              <h1 class="text-xl text-center font-semibold">Review Form</h1>
+              <p class="text-sm text-gray-300">
+                Javascript Review application where user can rate the cohort and
+                gicve their feedback.
+              </p>
+              <a
+                href="Review/index.html"
+                class="text-lg font-semibold bg-white text-center my-2 rounded-md cursor-pointer hover:bg-zinc-300 decoration-black"
+                >Visit</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </main>
-</body>
+    <footer class="min-h-25 bg-white/10 px-12 py-4 flex flex-col lg:flex-row gap-8">
+      <div class="lg:w-[50%] flex justify-center items-center">
+        <p class="text-center text-gray-300">Copyright © 2025 by Afridi Haque <br> All Rights Reserved</p>
+    </div>
+      <div class="lg:w-[50%] flex gap-4 justify-center items-center">
+        <a href="https://www.linkedin.com/in/afridi-haque-851924203/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#0078d4"
+              d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"
+            ></path>
+            <path
+              d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z"
+              opacity=".05"
+            ></path>
+            <path
+              d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z"
+              opacity=".07"
+            ></path>
+            <path
+              fill="#fff"
+              d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://x.com/AfridiHaque7">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+          >
+            <linearGradient
+              id="U8Yg0Q5gzpRbQDBSnSCfPa_yoQabS8l0qpr_gr1"
+              x1="4.338"
+              x2="38.984"
+              y1="-10.056"
+              y2="49.954"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#4b4b4b"></stop>
+              <stop offset=".247" stop-color="#3e3e3e"></stop>
+              <stop offset=".686" stop-color="#2b2b2b"></stop>
+              <stop offset="1" stop-color="#252525"></stop>
+            </linearGradient>
+            <path
+              fill="url(#U8Yg0Q5gzpRbQDBSnSCfPa_yoQabS8l0qpr_gr1)"
+              d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28	C42,40.209,40.209,42,38,42z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z"
+            ></path>
+            <polygon
+              fill="#fff"
+              points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"
+            ></polygon>
+            <polygon
+              fill="#fff"
+              points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"
+            ></polygon>
+          </svg>
+        </a>
+        <a href="mailto:afridi.hq97@gmail.com">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+          >
+            <linearGradient
+              id="NvW_RwTAona1rlOp72mkqa_7rhqrO588QcU_gr1"
+              x1="24"
+              x2="24"
+              y1="42"
+              y2="6.207"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#1ac8fc"></stop>
+              <stop offset=".258" stop-color="#1bb6fa"></stop>
+              <stop offset=".775" stop-color="#1c86f5"></stop>
+              <stop offset="1" stop-color="#1d70f2"></stop>
+            </linearGradient>
+            <path
+              fill="url(#NvW_RwTAona1rlOp72mkqa_7rhqrO588QcU_gr1)"
+              d="M34,42H14c-4.411,0-8-3.589-8-8V14c0-4.411,3.589-8,8-8h20c4.411,0,8,3.589,8,8v20 C42,38.411,38.411,42,34,42z"
+            ></path>
+            <path
+              d="M34,16c0.178,0,0.347,0.031,0.512,0.074l-7.824,7.825C25.946,24.64,24.973,25.01,24,25.01 s-1.946-0.37-2.688-1.111l-7.824-7.825C13.653,16.031,13.822,16,14,16H34 M35.926,17.488C35.969,17.653,36,17.822,36,18v12 c0,0.178-0.031,0.347-0.074,0.512L29.414,24L35.926,17.488 M12.074,17.488L18.586,24l-6.511,6.511C12.031,30.347,12,30.178,12,30 V18C12,17.822,12.031,17.653,12.074,17.488 M27.99,25.404l6.522,6.522C34.347,31.969,34.178,32,34,32H14 c-0.178,0-0.347-0.031-0.512-0.074l6.522-6.522c1.117,1.063,2.55,1.605,3.99,1.605S26.873,26.467,27.99,25.404 M34,15H14 c-0.244,0-0.495,0.035-0.768,0.108c-0.346,0.092-0.616,0.361-0.709,0.707c-0.092,0.341,0.003,0.704,0.248,0.956 c-0.189-0.183-0.44-0.283-0.697-0.283c-0.087,0-0.174,0.011-0.26,0.034c-0.345,0.093-0.615,0.363-0.707,0.709 C11.035,17.505,11,17.756,11,18v12c0,0.244,0.035,0.495,0.108,0.768c0.092,0.346,0.361,0.616,0.707,0.709 c0.086,0.023,0.173,0.034,0.26,0.034c0.257,0,0.508-0.099,0.696-0.282c-0.245,0.253-0.34,0.616-0.248,0.956 c0.093,0.345,0.363,0.615,0.709,0.707C13.505,32.965,13.756,33,14,33h20c0.244,0,0.495-0.035,0.768-0.108 c0.346-0.092,0.616-0.361,0.709-0.707c0.092-0.341-0.003-0.704-0.248-0.956c0.189,0.183,0.44,0.282,0.696,0.282 c0.087,0,0.174-0.011,0.26-0.034c0.345-0.093,0.615-0.363,0.707-0.709C36.965,30.495,37,30.244,37,30V18 c0-0.244-0.035-0.495-0.108-0.768c-0.092-0.346-0.361-0.616-0.707-0.709c-0.086-0.023-0.173-0.034-0.26-0.034 c-0.257,0-0.508,0.099-0.697,0.282c0.245-0.253,0.34-0.616,0.248-0.956c-0.093-0.345-0.363-0.615-0.709-0.707 C34.495,15.035,34.244,15,34,15L34,15z"
+              opacity=".05"
+            ></path>
+            <path
+              d="M34,15.5H14c-0.203,0-0.406,0.029-0.64,0.091c-0.173,0.046-0.308,0.181-0.354,0.353 c-0.046,0.173,0.003,0.357,0.129,0.483l7.824,7.825C21.77,25.063,22.85,25.51,24,25.51s2.23-0.447,3.041-1.257l7.824-7.825 c0.126-0.126,0.176-0.311,0.129-0.483c-0.046-0.173-0.182-0.307-0.354-0.353C34.406,15.529,34.203,15.5,34,15.5L34,15.5z M35.926,16.988c-0.131,0-0.259,0.051-0.354,0.146l-6.511,6.512c-0.195,0.195-0.195,0.512,0,0.707l6.511,6.511 c0.095,0.095,0.223,0.146,0.354,0.146c0.043,0,0.087-0.006,0.13-0.017c0.173-0.046,0.307-0.182,0.353-0.354 C36.471,30.406,36.5,30.203,36.5,30V18c0-0.203-0.029-0.406-0.091-0.64c-0.046-0.173-0.181-0.308-0.353-0.354 C36.013,16.994,35.969,16.988,35.926,16.988L35.926,16.988z M12.074,16.988c-0.043,0-0.087,0.006-0.13,0.017 c-0.173,0.046-0.307,0.182-0.353,0.354C11.529,17.594,11.5,17.797,11.5,18v12c0,0.203,0.029,0.406,0.091,0.64 c0.046,0.173,0.181,0.308,0.353,0.354c0.043,0.012,0.087,0.017,0.13,0.017c0.131,0,0.259-0.051,0.354-0.146l6.511-6.511 c0.195-0.195,0.195-0.512,0-0.707l-6.511-6.512C12.333,17.04,12.205,16.988,12.074,16.988L12.074,16.988z M27.99,24.904 c-0.124,0-0.248,0.046-0.345,0.138c-0.995,0.946-2.289,1.467-3.645,1.467s-2.651-0.521-3.645-1.467 c-0.097-0.092-0.221-0.138-0.345-0.138c-0.128,0-0.256,0.049-0.354,0.146l-6.522,6.522c-0.126,0.126-0.176,0.311-0.129,0.483 s0.182,0.307,0.354,0.353C13.594,32.471,13.797,32.5,14,32.5h20c0.203,0,0.406-0.029,0.64-0.091 c0.173-0.046,0.308-0.181,0.354-0.353s-0.003-0.357-0.129-0.483l-6.522-6.522C28.246,24.953,28.118,24.904,27.99,24.904 L27.99,24.904z"
+              opacity=".07"
+            ></path>
+            <path
+              fill="#f9f9f9"
+              d="M35.926,17.488L29.414,24l6.511,6.511C35.969,30.347,36,30.178,36,30V18 C36,17.822,35.969,17.653,35.926,17.488z M26.688,23.899l7.824-7.825C34.347,16.031,34.178,16,34,16H14 c-0.178,0-0.347,0.031-0.512,0.074l7.824,7.825C22.795,25.38,25.205,25.38,26.688,23.899z M12.074,17.488 C12.031,17.653,12,17.822,12,18v12c0,0.178,0.031,0.347,0.074,0.512L18.586,24L12.074,17.488z M24,27.009 c-1.44,0-2.873-0.542-3.99-1.605l-6.522,6.522C13.653,31.969,13.822,32,14,32h20c0.178,0,0.347-0.031,0.512-0.074l-6.522-6.522 C26.873,26.467,25.44,27.009,24,27.009z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://discord.gg/h2a55yvygC">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#8c9eff"
+              d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
